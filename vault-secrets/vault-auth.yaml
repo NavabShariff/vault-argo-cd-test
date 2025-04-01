@@ -4,7 +4,7 @@ metadata:
   name: default-ns-auth
   namespace: default
 spec:
-  vaultConnectionRef: default-ns
+  # vaultConnectionRef: default-ns
   method: kubernetes
   mount: kubernetes
   kubernetes:
