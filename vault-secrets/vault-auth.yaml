@@ -1,0 +1,12 @@
+apiVersion: secrets.hashicorp.com/v1beta1
+kind: VaultAuth
+metadata:
+  name: default-ns-auth
+  namespace: default
+spec:
+  vaultConnectionRef: default-ns
+  method: kubernetes
+  mount: kubernetes
+  kubernetes:
+    role: default-ns-role
+    serviceAccount: vault-auth
